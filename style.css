@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Robot Light';
+    src: url(Fonts/Roboto_Condensed-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(Fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+a:link{
+    color: aqua;
+}
+
+a:hover{
+    color: rgb(163, 249, 249);
+    font-size: 1.1em;
+}
+
+a:active{
+    color: rgb(0, 190, 190);
+    font-size: 1.1em;
+}
+
+a:visited{
+    color: rgb(255, 0, 0);
+}
+
+
+body{
+    background-color: hsl(0, 0%, 15%);
+    background-image: url(Images/bg.png);
+    margin: 0%;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 3px solid rgb(1, 12, 115);
+    text-shadow: 3px 3px 5px rgb(250, 252, 123), -3px -3px 5px rgb(255, 102, 0);
+}
+
+h1::first-letter{
+    font-style: italic;
+}
+
+div{
+    color: aquamarine;
+    border: 2px solid;
+    height: 75px;
+    overflow: auto;
+}
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(234, 234, 234);
+    box-shadow: 3px 3px 5px rgb(161, 63, 63);
+}
+
+p::selection{
+    color: rgb(0, 255, 34);
+    background-color: darkgray;
+}
+
+#p1{
+    color: tomato;
+    font-family: 'Lucida Console', 'courier new';
+    font-size: 1em;
+    border-bottom: 3px solid rgb(206, 0, 0);
+    border-top: 3px dotted rgb(135, 16, 16);
+    border-left: 3px dashed rgb(237, 111, 111);
+    border-right: 3px double rgb(146, 44, 44);
+    border-radius: 5px;
+}
+
+#p2{
+    color: rgb(102, 222, 255);
+    font-family: 'Robot Light';
+    font-style: italic;
+}
+
+#p2::first-line{
+    background-color: rgb(105, 105, 3);
+}
+
+#p3{
+    color: #3ef934;
+    font-family: 'Open Sans';
+}
+
+
+#p4{
+    color: hsl(296, 100%, 57%);
+}
+
+#fruit li::marker{
+    content: "✅";
+    color: green;
+    font-size: 1.2em;
+}
+
+#apple::after{
+    content: "🍎";
+}
+
+#orange::after{
+    content: "🍊";
+}
+
+#banana::after{
+    content: "🍌";
+}
